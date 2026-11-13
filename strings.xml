@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">كامري</string>
+    <string name="maps">الخرائط</string>
+    <string name="music">الموسيقى</string>
+    <string name="phone">الهاتف</string>
+    <string name="apps">التطبيقات</string>
+    <string name="temp_unknown">--°</string>
+    <string name="not_found">التطبيق غير متوفر</string>
+</resources>

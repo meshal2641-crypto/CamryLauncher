@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layoutDirection="rtl" android:orientation="horizontal"
+    android:padding="24dp">
+
+    <!-- لوحة المعلومات (يمين) -->
+    <LinearLayout
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="4" android:layout_margin="8dp"
+        android:background="@drawable/tile_bg"
+        android:gravity="center" android:orientation="vertical" android:padding="16dp">
+
+        <ImageView android:layout_width="120dp" android:layout_height="80dp"
+            android:src="@drawable/ic_toyota" />
+
+        <TextClock android:id="@+id/clock"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:format12Hour="hh:mm" android:format24Hour="HH:mm"
+            android:textColor="#FFFFFFFF" android:textSize="84sp"
+            android:fontFamily="sans-serif-light" />
+
+        <TextClock android:id="@+id/date"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:format12Hour="EEEE، d MMMM yyyy" android:format24Hour="EEEE، d MMMM yyyy"
+            android:textColor="@color/text_dim" android:textSize="24sp" />
+
+        <TextView android:id="@+id/temp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:text="@string/temp_unknown"
+            android:textColor="#FF4C95FF" android:textSize="56sp" />
+    </LinearLayout>
+
+    <!-- الأزرار (يسار) -->
+    <LinearLayout
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="6" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnMaps"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_margin="10dp"
+                android:background="@drawable/tile_bg"
+                android:clickable="true" android:focusable="true"
+                android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/ic_map" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:text="@string/maps"
+                    android:textColor="#FFFFFFFF" android:textSize="30sp" android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnMusic"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_margin="10dp"
+                android:background="@drawable/tile_bg"
+                android:clickable="true" android:focusable="true"
+                android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/ic_music" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:text="@string/music"
+                    android:textColor="#FFFFFFFF" android:textSize="30sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnPhone"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_margin="10dp"
+                android:background="@drawable/tile_bg"
+                android:clickable="true" android:focusable="true"
+                android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/ic_phone" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:text="@string/phone"
+                    android:textColor="#FFFFFFFF" android:textSize="30sp" android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnApps"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_margin="10dp"
+                android:background="@drawable/tile_bg"
+                android:clickable="true" android:focusable="true"
+                android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/ic_apps" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:text="@string/apps"
+                    android:textColor="#FFFFFFFF" android:textSize="30sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
